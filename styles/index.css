@@ -22,12 +22,18 @@ body {
  font-weight: bold;
    
 }
-
+.logo {
+  display: flex;
+}
+ .logoImg {
+  height: 1px;
+  width: 1px;
+ }
  
 
 .search-bar input {
   padding: 10px 15px;
-  width: 320px;
+  width: 500px;
   border-radius: 8px;
   border: none;
   outline: none;

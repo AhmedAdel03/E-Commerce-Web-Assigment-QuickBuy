@@ -1,6 +1,7 @@
 import { products } from "/data/ProductsData.js";
-console.log(products)
-products.forEach(element => {
+import {  AddToCart,Cart } from "/data/Cart.js";
+
+ products.forEach(element => {
    const html =`
     <div class="product-container">
           <div class="product-image-container">
@@ -24,8 +25,8 @@ products.forEach(element => {
            $ ${(element.priceCents/100)}
           </div>
 
-          <div class="product-quantity-container">
-            <select>
+          <div class="product-quantity-container ">
+            <select class="js-qunatity-${element.id}">
               <option selected value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -42,7 +43,7 @@ products.forEach(element => {
           <div class="product-spacer"></div>
 
           <div class="added-to-cart">
-            <img src="images/icons/checkmark.png">
+             
             Added
           </div>
 
@@ -56,3 +57,13 @@ products.forEach(element => {
     `
     document.querySelector(".product-js").innerHTML+=html;
  });
+ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+button.addEventListener('click' ,() =>{
+ const productId=  button.dataset.productId;
+
+    const qtyElement = document.querySelector(`.js-qunatity-${productId}`);
+    const ProductQuantity = parseInt(qtyElement.value);
+
+AddToCart(productId,ProductQuantity);
+ })
+})
