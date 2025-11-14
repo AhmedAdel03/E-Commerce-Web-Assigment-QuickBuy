@@ -63,7 +63,6 @@ button.addEventListener('click' ,() =>{
 
     const qtyElement = document.querySelector(`.js-qunatity-${productId}`);
     const ProductQuantity = parseInt(qtyElement.value);
-
-AddToCart(productId,ProductQuantity);
+ AddToCart(productId,ProductQuantity);
  })
 })
