@@ -22,7 +22,7 @@ export function CartQunatity()
  }
 
  
-function updateLocalStorage()
+export function updateLocalStorage()
 {
     localStorage.setItem('Cart',JSON.stringify(Cart));
 
@@ -56,4 +56,18 @@ updateLocalStorage()
 CartQunatity()
 UpdatePaymentSummary();
 console.log(Cart)
+}
+export function removeFromCart(productId)
+{
+    const newArray=[];
+    
+    Cart.forEach((product)=>{
+       if(product.productId!==productId)
+       {
+        newArray.push(product)
+       }
+    })
+    Cart=newArray;
+    updateLocalStorage();
+
 }

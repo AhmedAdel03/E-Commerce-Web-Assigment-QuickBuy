@@ -122,7 +122,6 @@ header {
     gap: 10px;
   }
 }
-/* ---------------- CART ITEM ---------------- */
 
 .cart-item-container {
   border: 1px solid #ddd;
@@ -241,4 +240,10 @@ header {
   .delivery-options {
     grid-column: span 2;
   }
+}
+ .is-editing-quantity {
+  display: none;
+}
+.is-editing-quantity-appear {
+ display: initial;
 }
