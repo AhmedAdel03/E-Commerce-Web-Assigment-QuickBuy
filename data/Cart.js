@@ -1,4 +1,5 @@
- import {UpdatePaymentSummary } from "/Scripts/payment.js";
+ import { Orders } from "/Scripts/orders.js";
+import {UpdatePaymentSummary } from "/Scripts/payment.js";
 export let Cart=JSON.parse(localStorage.getItem('Cart'));
 
 if(!Cart){
@@ -71,3 +72,4 @@ export function removeFromCart(productId)
     updateLocalStorage();
 
 }
+ 

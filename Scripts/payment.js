@@ -73,7 +73,7 @@ let html=`
             <div class="payment-summary-money js-total-order">$${((itemsPrice/100*1.1).toFixed(2))}</div>
           </div>
 
-          <button class="place-order-button button-primary">
+          <button class="place-order-button button-primary js-place-btn">
             Place your order
           </button>
         </div>

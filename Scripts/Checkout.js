@@ -1,4 +1,4 @@
-  import {Cart,removeFromCart,updateLocalStorage} from "/data/Cart.js";
+ import {Cart,removeFromCart,updateLocalStorage} from "/data/Cart.js";
   import {products} from "/data/ProductsData.js";
   import {delivery  } from "/Scripts/DeliveryOptions.js";
    import {UpdatePaymentSummary } from "/Scripts/payment.js";
@@ -27,11 +27,11 @@
                   ${matchingProduct.name}
                 </div>
                 <div class="product-price">
-                  ${matchingProduct.priceCents / 100}
+                  ${matchingProduct.priceCents / 100}$
                 </div>
                <div class="product-quantity">
                   <span>
-                    Quantity: <span class="quantity-label js-quantity-label">1</span>
+                    Quantity: <span class="quantity-label js-quantity-label">${item.quantity}</span>
                   </span>
                   <span class="update-quantity-link link-primary js-update-button" data-product-id="${productId}">
                     Update
@@ -150,3 +150,4 @@ UpdatePaymentSummary();
 })
 
 UpdatePaymentSummary();
+ 

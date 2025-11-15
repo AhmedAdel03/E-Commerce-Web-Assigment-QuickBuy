@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles/YourOrders.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="orders-page">
+  <h2>Your Orders</h2>
+
+  <div id="orders-container" class="orders-container">
+
+  <div class="order-card js-item-order-${productId}">
+
+       <div class="order-header">
+        <span>${delivery}</span>
+        <span>Order ID: #${productId}</span>
+      </div>
+
+       <div class="order-item-details-grid">
+        <img class="product-image"
+          src="/images/products/6-piece-non-stick-baking-set.webp">
+
+        <div class="order-item-details">
+          <div class="product-name">dadad</div>
+          <div class="product-price">222 EGP</div>
+
+          <div class="product-quantity">
+            Quantity: <span class="quantity-label">2</span>
+          </div>
+        </div>
+      </div>
+
+       <div class="delivery-card">
+        <div class="delivery-option-date">
+            Delivery Time: ${delivery.Tommorow.deliverytime}
+        </div>
+
+        <div class="delivery-option-price">
+            Delivery Cost ${delivery.Tommorow.deliveryprice}$ – Shipping
+        </div>
+      </div>
+
+  </div>
+
+</div>
+
+
+
+
+</body>
+<script type="module" src="orders.js"></script>
+</html>
