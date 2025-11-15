@@ -1,15 +1,15 @@
 A simple and modern e-commerce web application built using HTML, CSS, JavaScript, and modular components.
 The project includes a product listing page, cart system, delivery options, and a full checkout experience.
 
-🚀 Features
-🛍 Product Listing
+  Features
+  Product Listing
 
-Displays all available products dynamically.
+--Displays all available products dynamically.
 
 Each product includes:
 Image, Name, Price, Rating, Quantity Selector.
 
-🛒 Shopping Cart
+  --Shopping Cart
 
 Add, remove, and update product quantities.
 
@@ -17,7 +17,7 @@ Cart persists in local storage.
 
 Real-time price calculations.
 
-🚚 Delivery Options
+  --Delivery Options
 
 Users can choose between multiple delivery methods:
 
@@ -29,7 +29,7 @@ Next-day delivery
 
 Delivery price updates the total order cost instantly.
 
-💳 Checkout Page
+ -- Checkout Page
 
 Displays selected products with quantities.
 
@@ -43,7 +43,7 @@ Shipping cost
 
 Total amount
 
-🔧 Modular JavaScript Structure
+ -- Modular JavaScript Structure
 
 Cart.js → Handles cart logic
 
