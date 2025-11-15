@@ -101,14 +101,14 @@ header {
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  background: #ff9900;
+  background: skyblue;
   border: none;
   border-radius: 6px;
   transition: 0.2s;
 }
 
 .place-order-button:hover {
-  background: #e68a00;
+  background: wheat;
 }
 
  
