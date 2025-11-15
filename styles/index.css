@@ -22,13 +22,8 @@ body {
  font-weight: bold;
    
 }
-.logo {
-  display: flex;
-}
- .logoImg {
-  height: 1px;
-  width: 1px;
- }
+ 
+ 
  
 
 .search-bar input {
@@ -59,59 +54,14 @@ body {
 
  
 
- 
-
- 
- 
- 
-
 .product-grid {
   margin-top: 30px;
   display: grid; 
    gap: 20px;
    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
 }
-
-.product-card {
-  background: white;
-  padding: 20px;
-  
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  font-size: 20px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-}
-
  
 
- footer {
-  background: #111;
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-  margin-top: 100%;
-}
-
-.footer-container a {
-  color: #00c6ff;
-  margin: 0 10px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-container a:hover {
-  color: #007bff;
-}
  
  .product-container {
   background: white;
@@ -183,19 +133,7 @@ body {
   margin-bottom: 15px;
 }
 
-.added-to-cart {
-  display: flex;
-  align-items: center;
-  color: green;
-  font-weight: 600;
-  margin-bottom: 10px;
-  display: none;
-}
-
-.added-to-cart img {
-  width: 18px;
-  margin-right: 5px;
-}
+ 
 
 .add-to-cart-button {
   padding: 10px 20px;
@@ -211,10 +149,4 @@ body {
 .add-to-cart-button:hover {
   background: #0056b3;
 }
-.Orders {
-  font-size: large;
-  background-color: #00c6ff;
-  padding: 10px;
-  margin-left: 60px;
-  border-radius: 20px;
-}
+ 

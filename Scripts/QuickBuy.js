@@ -42,10 +42,7 @@ import {  AddToCart,CartQunatity } from "/data/Cart.js";
 
           <div class="product-spacer"></div>
 
-          <div class="added-to-cart">
-             
-            Added
-          </div>
+           
 
           <button class="add-to-cart-button button-primary js-add-to-cart"
           data-product-id="${element.id}">

@@ -111,17 +111,13 @@ header {
   background: wheat;
 }
 
- 
-@media (max-width: 900px) {
-  .checkout-grid {
-    grid-template-columns: 1fr;
-  }
+
 
   .checkout-header .header-content {
     flex-direction: column;
     gap: 10px;
   }
-}
+ 
 
 .cart-item-container {
   border: 1px solid #ddd;
@@ -145,13 +141,13 @@ header {
   gap: 20px;
 }
 
-/* Product Image */
+ 
 .product-image {
   width: 100%;
   border-radius: 8px;
 }
 
-/* Product Info */
+ 
 .cart-item-details .product-name {
   font-size: 20px;
   font-weight: 600;
@@ -231,16 +227,7 @@ header {
 }
 
  
-@media (max-width: 850px) {
-  .cart-item-details-grid {
-    grid-template-columns: 120px 1fr;
-    grid-template-rows: auto auto;
-  }
-
-  .delivery-options {
-    grid-column: span 2;
-  }
-}
+ 
  .is-editing-quantity {
   display: none;
 }
