@@ -1,6 +1,10 @@
- import {CartProducts  } from "/data/Cart.js";
-console.log(CartProducts)
-CartProducts.forEach((item) => {
+  import {Cart} from "/data/Cart.js";
+  import {products} from "/data/ProductsData.js";
+  import {delivery  } from "/Scripts/DeliveryOptions.js";
+   import {UpdatePaymentSummary } from "/Scripts/payment.js";
+
+
+ Cart.forEach((item) => {
   const productId = item.productId;
   let matchingProduct;
   products.forEach((product) => {
@@ -43,6 +47,7 @@ CartProducts.forEach((item) => {
                   Choose a delivery option:
                 </div>
                 <div class="js-delivery-option-All">
+
     <div class="delivery-option">
       <input type="radio" class="delivery-option-input" data-deliveryprice="${delivery.Tommorow.deliveryprice}"
         name="delivery-option-${item.productId}">
@@ -100,3 +105,5 @@ CartProducts.forEach((item) => {
   document.querySelector(".js-order-summary").innerHTML += html;
 
 }); 
+
+UpdatePaymentSummary();

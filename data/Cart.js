@@ -1,5 +1,5 @@
- 
-export let Cart=JSON.parse(localStorage.getItem('CartProducts'));
+ import {UpdatePaymentSummary } from "/Scripts/payment.js";
+export let Cart=JSON.parse(localStorage.getItem('Cart'));
 
 if(!Cart){
     Cart=
@@ -13,17 +13,18 @@ if(!Cart){
 ];
 
 }
-function CartQunatity()
+export function CartQunatity()
 {
+    
     let CartQunatity=0;
-     CartQunatity=Cart.length +1;
+     CartQunatity=Cart.length  ;
      document.querySelector(".js-cart-count").innerHTML=CartQunatity ;
  }
 
  
-function updateLocalStorage(List)
+function updateLocalStorage()
 {
-    localStorage.setItem(List,JSON.stringify(Cart));
+    localStorage.setItem('Cart',JSON.stringify(Cart));
 
 }
 
@@ -51,7 +52,8 @@ else {
     })
 
 }
-updateLocalStorage(Cart)
+updateLocalStorage()
 CartQunatity()
+UpdatePaymentSummary();
 console.log(Cart)
 }
